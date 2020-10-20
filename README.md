@@ -12,6 +12,8 @@
 
 在线 demo： [brush-timeline online demo](http://giscafer.github.io/sinokit/#/./components/brush-timeline)
 
+[![Edit vue-brush-timeline-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-brush-timeline-demo-8evfk?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+
 ### 常规用法
 
 尝试一下拉动伸缩滚动条长度，控制时间轴内容的缩放
