@@ -1,6 +1,6 @@
 {
   "name": "vue-brush-timeline",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A json-schema editor of high efficient and easy-to-use, base on Vue.",
   "keywords": [
     "json-schema"

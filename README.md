@@ -2,9 +2,11 @@
 
 [![](https://img.shields.io/npm/v/vue-brush-timeline.svg?style=flat-square)](https://www.npmjs.com/package/vue-brush-timeline)
 
-![](./brush-timeline.png)
-
 基于 `d3-brush` 实现的时间轴，可缩放、拖动
+
+## 截图
+
+![](./brush-timeline.png)
 
 ## 示例
 
