@@ -8,6 +8,8 @@
 
 ## 示例
 
+在线 demo： [brush-timeline online demo](http://giscafer.github.io/sinokit/#/./components/brush-timeline)
+
 ### 常规用法
 
 尝试一下拉动伸缩滚动条长度，控制时间轴内容的缩放
