@@ -1,0 +1,60 @@
+{
+  "name": "vue-brush-timeline",
+  "version": "0.1.0",
+  "description": "A json-schema editor of high efficient and easy-to-use, base on Vue.",
+  "keywords": [
+    "json-schema"
+  ],
+  "author": "giscafer <giscafer@outlook.com>",
+  "homepage": "https://github.com/giscafer/vue-brush-timeline",
+  "license": "MIT",
+  "main": "dist/brush-timeline.min.js",
+  "unpkg": "dist/brush-timeline.min.js",
+  "directories": {
+    "dist": "dist",
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giscafer/vue-brush-timeline.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack --config build/webpack.common.js --optimize-max-chunks 1",
+    "lint": "eslint  lib/**/* build/**/* --quiet",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "vis-timeline": "^7.3.7",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass-loader": "^9.0.2",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.8",
+    "uppercamelcase": "^3.0.0",
+    "url-loader": "^4.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
+  }
+}
