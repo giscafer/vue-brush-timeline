@@ -1,6 +1,6 @@
 import BrushTimeline from './timeline';
 
-install = function (Vue) {
+const install = function (Vue) {
   Vue.component(BrushTimeline.name, BrushTimeline);
 };
 
