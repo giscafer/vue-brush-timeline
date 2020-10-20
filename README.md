@@ -19,9 +19,6 @@
 尝试一下拉动伸缩滚动条长度，控制时间轴内容的缩放
 
 ```html
-/*vue*/
-<desc> `s-brush-timeline` 组件使用展示，`render-type="json"` 格式数据 </desc>
-
 <template>
   <div>
     <s-brush-timeline
@@ -52,11 +49,6 @@
 ### 自定义 HTML 模板渲染
 
 ```html
-/*vue*/
-<desc>
-  `s-brush-timeline` 组件使用展示，`render-type="html"` 自定义 html 模板
-</desc>
-
 <template>
   <div>
     <s-brush-timeline
@@ -116,9 +108,6 @@
 限制最大放大倍数，固定间距避免换行
 
 ```html
-/*vue*/
-<desc> `nowrap` 设置为true </desc>
-
 <template>
   <div>
     <s-brush-timeline
