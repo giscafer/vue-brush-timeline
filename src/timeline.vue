@@ -4,17 +4,17 @@
     <svg width="100%" :height="height" />
     <div
       class="timeline-tooltip timeline-tooltip-placement-top"
-      style="left: -1000px; top:0; transform-origin: 50% 45px;display:none"
+      style="left: -1000px; top: 0; transform-origin: 50% 45px; display: none"
     >
       <div class="timeline-tooltip-content">
         <div class="timeline-tooltip-arrow"></div>
         <div role="tooltip" class="timeline-tooltip-inner">prompt text</div>
       </div>
     </div>
-    <div class="timeline-border-start" style="display:block"></div>
+    <div class="timeline-border-start" style="display: block"></div>
     <div
       class="timeline-border-end"
-      style="left: -1000px; top:0; transform-origin: 50% 45px;display:none"
+      style="left: -1000px; top: 0; transform-origin: 50% 45px; display: none"
     ></div>
   </div>
 </template>
@@ -112,7 +112,7 @@ export default {
             content: `<div><p class="date">${item.date}</p>${
               item.url
                 ? `<a href="${item.url}" ${titleStr} target="_blank">${label}</a></div>`
-                : `<span ${titleStr} style="color:#333333e6">${label}</span>`
+                : `<span ${titleStr} class="desc">${label}</span>`
             }`,
           }
           items.push(obj)
@@ -228,23 +228,9 @@ export default {
           }
         }
         // 根据 brush 位置渲染 缩放和定位timeline
-        /*    if (event.type === 'end') { */
         const timeX = [wx, ex].map(x.invert, x)
         this.timeline.setWindow(timeX[0], timeX[1])
-        /*  } else {
-          if (setWindowTimer) {
-            clearTimeout(setWindowTimer)
-            setWindowTimer = null
-          }
-          setWindowTimer = setTimeout(() => {
-            const timeX = [wx, ex].map(x.invert, x)
-            this.timeline.setWindow(timeX[0], timeX[1])
-            if (setWindowTimer) {
-              clearTimeout(setWindowTimer)
-              setWindowTimer = null
-            }
-          }, 100)
-        } */
+
         transformHandle(brushHandleLeft, wx, 'w')
         transformHandle(brushHandleRight, ex, 'e')
 
@@ -395,6 +381,10 @@ $bgColor: #fff;
         letter-spacing: 1px;
         color: $textColor;
         text-decoration: none;
+      }
+      .desc {
+        color: #333333e6;
+        font-size: 16px;
       }
     }
   }
